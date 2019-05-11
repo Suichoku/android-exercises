@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_clicked_txt">Painiketta klikattiin</string>
+    <string name="button_txt">Klikkaa Minua!</string>
+    <string name="landscape_txt">Vaakanäkymä</string>
+    <string name="portrait_txt">Pystynäkymä</string>
+</resources>
