@@ -19,26 +19,31 @@ class MainActivity : AppCompatActivity() {
 
     fun buttonClicked(view: View?) {
         val num = (view as Button).text.toString()
-        if(!state) {
-            value1 = if(num == getString(R.string.sign)) { // is button clicked sign change
-                if(value1.contains("-")) { // is value negative
-                    value1.replace("-", "") // change value to positive
-                } else {
-                    "-$value1" // change value to negative
-                }
-            } else if (num == getString(R.string.dot)) { // is button clicked dot button
-                if(value1.contains(".")) { // does value already contain decimal dot
-                    value1 // do nothing
-                } else {
-                    "$value1$num" // add decimal dot
-                }
+        var temp = if(state) {
+            value2
+        } else value1
+
+        temp = if(num == getString(R.string.sign)) { // is button clicked sign change
+            if(temp.contains("-")) { // is value negative
+                temp.replace("-", "") // change value to positive
             } else {
-                "$value1$num" // append number to value
+                "-$temp" // change value to negative
             }
-            valueTextView.text = value1
+        } else if (num == getString(R.string.dot)) { // is button clicked dot button
+            if(temp.contains(".")) { // does value already contain decimal dot
+                temp // do nothing
+            } else {
+                "$temp$num" // add decimal dot
+            }
         } else {
-            value2 += num
-            valueTextView.text = value2
+            "$temp$num" // append number to value
         }
+
+        valueTextView.text = temp
+
+        if(state) {
+            value2 = temp
+        } else value1 = temp
+
     }
 }
