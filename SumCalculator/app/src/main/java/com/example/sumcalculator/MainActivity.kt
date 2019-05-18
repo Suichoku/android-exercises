@@ -11,27 +11,27 @@ class MainActivity : AppCompatActivity() {
 
     private var value1: String = "" // holds first value
     private var value2: String = "" // holds second value
-    private var state: Int = 0 // amount of values given
+    private var state: Boolean = false // current state of calculation
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
 
-    fun clearClicked(view: View?) {
+    fun clearClicked(view: View?) { // reset everything
         value1 = ""
         value2 = ""
-        state = 0
+        state = false
         valueTextView.text = getString(R.string.value)
     }
 
-    fun buttonClicked(view: View?) {
+    fun buttonClicked(view: View?) { // number or symbol clicked (sign change/dot)
         val num = (view as Button).text.toString()
-        var temp = when (state) {
-            0 -> value1
-            1 -> value2
-            else -> "" // clear value
-        }
+        var temp = if(!state) {
+            value1
+        } else value2
+
+        if(temp.length >= 11) return // check if value length is too high
 
         temp = if(num == getString(R.string.sign)) { // is button clicked sign change
             if(temp.contains("-")) { // is value negative
@@ -49,44 +49,39 @@ class MainActivity : AppCompatActivity() {
             "$temp$num" // append number to value
         }
 
-        valueTextView.text = temp
+        valueTextView.text = temp // show current value
 
-        if(state == 0 || state == 2) {
+        if(!state) { // save current value
             value1 = temp
         } else value2 = temp
 
     }
 
     fun plusClicked(view: View?) {
-        when(state) {
-            0 -> { // first addition
-                state = 1
+        if(!state) {
+            value1 = if(value1 == "-" || value1 == ".") "0.0" else value1 // default value when user gives invalid value
+            state = true // change calculation to second state
+        } else {
+            if(value2 == "" || value2 == "-" || value2 == ".") { // to avoid bug when pressing plus two times in a row
+                value2 = "0.0" // give default value
             }
-            1 -> { // plus already once clicked (or more)
-                if(value2 == "") { // to avoid bug when pressing plus two times in a row
-                    value2 = "0.0" // give default value
-                }
-                value1 = "${value1.toDouble() + value2.toDouble()}"
-                valueTextView.text = value1
-                value2 = ""
-                state = 1
-
-            }
-            else -> {
-                value1 = valueTextView.text.toString()
-                state = 1
-            }
+            if(value1.length >= 13) return // check if sum value is too large
+            value1 = "${value1.toDouble() + value2.toDouble()}" // save current sum to value1
+            valueTextView.text = value1
+            value2 = "" // reset value2
         }
-        //valueTextView.text = getString(R.string.value)
+
+        //valueTextView.text = getString(R.string.value) // reset current shown value to default value
     }
 
     fun equalsClicked(view: View?) {
+        value2 = if(value2 == "-" || value2 == ".") "0.0" else value2 // default value when user gives invalid value
         if(value1 != "" && value2 != "") {
-            val df = DecimalFormat("#.#####")
-            valueTextView.text = df.format(value1.toDouble() + value2.toDouble())
-            value1 = ""
-            value2 = ""
-            state = 0
+            val df = DecimalFormat("#.#####") // formatting pattern
+            valueTextView.text = df.format(value1.toDouble() + value2.toDouble()) // show resulting sum
+            value1 = "" // reset value1
+            value2 = "" // reset value2
+            state = false // reset calculation state
         }
     }
 }
