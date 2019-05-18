@@ -59,10 +59,10 @@ class MainActivity : AppCompatActivity() {
 
     fun plusClicked(view: View?) {
         if(!state) {
-            value1 = if(value1 == "-" || value1 == ".") "0.0" else value1 // default value when user gives invalid value
+            value1 = if(value1 == "-" || value1 == "." || value1 == "-.") "0.0" else value1 // default value when user gives invalid value
             state = true // change calculation to second state
         } else {
-            if(value2 == "" || value2 == "-" || value2 == ".") { // to avoid bug when pressing plus two times in a row
+            if(value2 == "" || value2 == "-" || value2 == "." || value2 == "-.") { // to avoid bug when pressing plus two times in a row
                 value2 = "0.0" // give default value
             }
             if(value1.length >= 13) return // check if sum value is too large
@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun equalsClicked(view: View?) {
-        value2 = if(value2 == "-" || value2 == ".") "0.0" else value2 // default value when user gives invalid value
+        value2 = if(value2 == "-" || value2 == "." || value2 == "-.") "0.0" else value2 // default value when user gives invalid value
         if(value1 != "" && value2 != "") {
             val df = DecimalFormat("#.#####") // formatting pattern
             valueTextView.text = df.format(value1.toDouble() + value2.toDouble()) // show resulting sum
