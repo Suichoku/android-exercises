@@ -48,7 +48,7 @@
             <Button
                     android:text="@string/clear"
                     android:textSize="30sp" android:textColor="#555555"
-                    android:layout_width="wrap_content"
+                    android:layout_width="wrap_content" android:onClick="clearClicked"
                     android:layout_height="match_parent" android:id="@+id/clearButton" android:layout_weight="1"/>
         </LinearLayout>
         <LinearLayout
@@ -98,7 +98,7 @@
             <Button
                     android:text="@string/plus"
                     android:textSize="30sp" android:textColor="#555555"
-                    android:layout_width="wrap_content"
+                    android:layout_width="wrap_content" android:onClick="plusClicked"
                     android:layout_height="match_parent" android:id="@+id/plusButton" android:layout_weight="1"/>
         </LinearLayout>
         <LinearLayout
@@ -118,7 +118,7 @@
             <Button
                     android:text="@string/equals"
                     android:textSize="30sp" android:backgroundTint="#357aea" android:textColor="#eeeeee"
-                    android:layout_width="wrap_content"
+                    android:layout_width="wrap_content" android:onClick="equalsClicked"
                     android:layout_height="match_parent" android:id="@+id/calculateButton" android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>
