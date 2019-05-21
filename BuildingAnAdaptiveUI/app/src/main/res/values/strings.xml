@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BuildingAnAdaptiveUI</string>
+    <string name="firstname">FirstName</string>
+    <string name="lastname">LastName</string>
+    <string name="jobtitle">JobTitle</string>
+    <string name="employee_information">Employee information text here...</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="employeeAvatar">avatar</string>
+    <string name="basic_text">Lorem ipsum dolor sit amet, lorem pellentesque at, nonummy purus mi, vestibulum nulla feugiat a posuere tellus, quam ac dui. Morbi molestie. Sed justo animi risus sed aliquam. In at. Eu mi ac nobis consectetuer dictum venenatis, pede eu in porttitor pulvinar vivamus, est pede ut bibendum et pretium.</string>
+    <string name="basic_text_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit libero volutpat sed cras ornare arcu dui. Pellentesque adipiscing commodo elit at imperdiet dui. Sapien nec sagittis aliquam malesuada. Tortor dignissim convallis aenean et tortor at risus. Sit amet mauris commodo quis imperdiet. Amet nisl purus in mollis nunc. Habitasse platea dictumst vestibulum rhoncus est. Vivamus at augue eget arcu dictum varius. Diam sollicitudin tempor id eu nisl. Elit ut aliquam purus sit. Turpis cursus in hac habitasse platea dictumst quisque sagittis. Risus nec feugiat in fermentum posuere urna. Rutrum quisque non tellus orci. Nunc mi ipsum faucibus vitae aliquet. Nibh ipsum consequat nisl vel pretium lectus quam id. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc.
+
+        Nisi scelerisque eu ultrices vitae auctor eu augue. Porttitor massa id neque aliquam vestibulum morbi blandit cursus risus. Faucibus nisl tincidunt eget nullam non nisi est sit. Vel facilisis volutpat est velit egestas dui id ornare. Vitae ultricies leo integer malesuada nunc vel risus. Iaculis eu non diam phasellus vestibulum lorem. Erat imperdiet sed euismod nisi. Integer enim neque volutpat ac. Vestibulum mattis ullamcorper velit sed ullamcorper morbi. Pellentesque habitant morbi tristique senectus. Odio facilisis mauris sit amet massa. Eu facilisis sed odio morbi quis commodo odio. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Malesuada bibendum arcu vitae elementum curabitur vitae. Purus non enim praesent elementum facilisis leo.</string>
+</resources>
+
