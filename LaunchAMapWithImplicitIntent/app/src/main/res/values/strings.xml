@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LaunchAMapWithImplicitIntent</string>
+    <string name="info">Give a location (lat and lng):</string>
+    <string name="showMap">SHOW A MAP</string>
+    <string name="latHint">latitude</string>
+    <string name="lngHint">longitude</string>
+</resources>
