@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" tools:srcCompat="@tools:sample/avatars[0]"
+            android:id="@+id/avatarImageView" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="16dp"
+            android:contentDescription="@string/avatarContent"
+            app:layout_constraintVertical_bias="0.0" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline" android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="@string/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTextView"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline"/>
+    <TextView
+            android:text="@string/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTextView"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+            app:layout_constraintStart_toStartOf="@+id/nameTextView"/>
+    <TextView
+            android:text="@string/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailTextView"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+            app:layout_constraintStart_toStartOf="@+id/titleTextView"/>
+    <TextView
+            android:text="@string/phoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneTextView" app:layout_constraintStart_toStartOf="@+id/emailTextView"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/emailTextView"/>
+    <TextView
+            android:text="@string/departmentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/departmentTextView" app:layout_constraintStart_toStartOf="@+id/phoneTextView"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/phoneTextView"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="16dp"/>
+    <android.support.constraint.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:layout_constraintGuide_begin="144dp" android:id="@+id/guideline"/>
+
+</android.support.constraint.ConstraintLayout>

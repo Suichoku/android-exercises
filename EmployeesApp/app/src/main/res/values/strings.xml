@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EmployessApp</string>
+    <string name="nameText">nameTextView</string>
+    <string name="titleText">titleTextView</string>
+    <string name="emailText">emailTextView</string>
+    <string name="phoneText">phoneTextView</string>
+    <string name="departmentText">departmentTextView</string>
+    <string name="avatarContent">picture of the person</string>
+    <string name="emailString">email: %1$s</string>
+    <string name="phoneString">phone: %1$s</string>
+    <string name="titleString">title: %1$s</string>
+    <string name="departmentString">department: %1$s</string>
+    <string name="nameString">%1$s %2$s</string>
+    <string name="descString">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.
+    </string>
+</resources>
