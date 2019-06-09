@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RoomShoppingList</string>
+    <string name="action_settings">Settings</string>
+    <string name="itemNameDefault">Item name</string>
+    <string name="itemCountDefault">Item count</string>
+    <string name="itemPriceDefault">Item price</string>
+    <string name="nameDialogDefault">Name</string>
+    <string name="countDialogDefault">Count</string>
+    <string name="priceDialogDefault">Price</string>
+</resources>

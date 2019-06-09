@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <TextView
+            android:text="@string/nameDialogDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:id="@+id/nameDialogTextView"
+            app:layout_constraintBaseline_toBaselineOf="@+id/nameEditText"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" android:id="@+id/nameEditText" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nameDialogTextView" android:layout_marginStart="32dp"
+            android:hint="@string/nameDialogDefault" android:autofillHints="@string/nameDialogDefault"/>
+    <TextView
+            android:text="@string/countDialogDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:id="@+id/countDialogTextView"
+            app:layout_constraintBaseline_toBaselineOf="@+id/countEditText"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_marginTop="8dp" android:id="@+id/countEditText" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nameDialogTextView" android:layout_marginStart="32dp"
+            android:hint="@string/countDialogDefault" android:autofillHints="@string/countDialogDefault"
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintTop_toBottomOf="@+id/nameEditText"/>
+    <TextView
+            android:text="@string/priceDialogDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:id="@+id/priceDialogTextView"
+            app:layout_constraintBaseline_toBaselineOf="@+id/priceEditText"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_marginTop="16dp" android:id="@+id/priceEditText" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nameDialogTextView" android:layout_marginStart="32dp"
+            android:hint="@string/priceDialogDefault" android:autofillHints="@string/priceDialogDefault"
+            app:layout_constraintHorizontal_bias="1.0" app:layout_constraintTop_toBottomOf="@+id/countEditText"/>
+</android.support.constraint.ConstraintLayout>
