@@ -7,4 +7,8 @@
     <string name="nameDialogDefault">Name</string>
     <string name="countDialogDefault">Count</string>
     <string name="priceDialogDefault">Price</string>
+    <string name="dialog_title">New Item</string>
+    <string name="dialog_message">Add new shopping list item</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">CANCEL</string>
 </resources>
