@@ -4,9 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+// https://codelabs.developers.google.com/codelabs/android-room-with-a-view-kotlin/#3
 @Entity(tableName = "word_table")
-data class Word(
-    @PrimaryKey
-    @ColumnInfo(name = "word") // Name of the column (if needed to be different from name of member variable)
-    val word: String
+data class Word(@PrimaryKey @ColumnInfo(name = "word") val word: String
 )
