@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">EmployeesFragmentsApp</string>
+    <string name="nameFormat">%1$s %2$s</string>
+    <string name="namePlaceholder">Firstname Lastname</string>
+    <string name="emailPlaceholder">placeholder@example.com</string>
+    <string name="phonePlaceholder">012-345-6789</string>
+    <string name="titlePlaceholder">Example Placeholder</string>
+    <string name="departmentPlaceholder">Testing</string>
+    <string name="bioPlaceholder"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Aliquam vitae justo in nisi pulvinar molestie. Donec ultrices nunc a metus commodo bibendum.
+        Nunc turpis est, lobortis ac semper at, commodo sed tortor.
+        Maecenas risus elit, sollicitudin vitae ultrices aliquet, ultricies luctus tellus.
+        Sed euismod cursus congue. Sed nisi nisl, dictum eget orci sit amet, ullamcorper dignissim metus.
+        Mauris ut cursus dui. Integer ornare quis mi non eleifend.
+        Aliquam congue luctus nunc, ut laoreet libero vestibulum consequat.
+        Phasellus eget facilisis velit, eu maximus orci. Nam quis scelerisque dui.
+        Aenean sit amet tellus arcu. Aliquam malesuada massa placerat dolor scelerisque, vel elementum nunc dignissim.
+        Mauris porta ipsum massa, vel facilisis sem tincidunt sit amet.
+
+        Phasellus justo ex, pharetra id orci quis, rutrum mattis risus. Maecenas malesuada lorem in neque laoreet porta.
+        Fusce non lorem nec ipsum pellentesque porta sed pulvinar nibh.
+        Nam eleifend nisl non leo auctor, nec efficitur urna congue.
+        Integer porttitor ligula vel erat pellentesque, et luctus est pretium.
+        Proin ante mauris, accumsan in arcu faucibus, tempor tincidunt ligula. Praesent id vestibulum sem.
+        Aliquam at leo non nisi tempus maximus. Sed sodales, enim ut scelerisque mollis, nisi neque posuere nunc,
+        vel lobortis odio leo vel odio. Mauris aliquet porttitor massa ac scelerisque. Vestibulum quis consectetur leo,
+        mattis fringilla erat. Duis et tincidunt eros. Sed sollicitudin ornare pharetra.
+        Proin a ante sit amet arcu iaculis cursus vel auctor nisi.
+        Maecenas quis sapien vel metus ornare rhoncus eget at arcu. Donec efficitur euismod turpis id feugiat.
+        Pellentesque ut ex ac mauris interdum tincidunt. Phasellus interdum lacinia ultrices. Suspendisse potenti.
+        Maecenas porttitor metus tincidunt mi imperdiet faucibus. Donec eu euismod justo.
+        Donec ut dolor et leo euismod pretium. Duis aliquam erat posuere, efficitur ipsum eu, placerat nibh.
+    </string>
+    <string name="avatarDescription">Avatar of the employee</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
