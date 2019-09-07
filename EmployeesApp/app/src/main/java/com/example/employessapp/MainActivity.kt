@@ -22,8 +22,7 @@ class MainActivity : AppCompatActivity() {
         // Instantiate the RequestQueue
         val queue = Volley.newRequestQueue(this)
         // URL to JSON data - remember use your own data here
-        //val url = "http://localhost:3000/employees" // oman serverin data ei toiminut
-        val url = "http://ptm.fi/data/android_employees.json"
+        val url = "https://api.jsonbin.io/b/5d6f863b2d1fb96463c3dbff"
         // Create request and listeners
         val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null,
             Response.Listener { response ->

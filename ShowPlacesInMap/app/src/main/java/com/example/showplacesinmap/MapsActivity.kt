@@ -33,7 +33,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         // Instantiate the RequestQueue
         val queue = Volley.newRequestQueue(this)
-        val url = "https://api.myjson.com/bins/z78wv.json"
+        //val url = "https://api.myjson.com/bins/z78wv.json"
+        val url = "https://api.jsonbin.io/b/5d6f89a2fc5937640ce20e1f"
 
         val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null,
             Response.Listener { response ->
